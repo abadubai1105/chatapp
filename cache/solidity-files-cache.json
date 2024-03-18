@@ -1,8 +1,8 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "D:\\HCMUS\\Đồ án tốt nghiệp\\chatApp_JS\\chat-dapp-starter-file-main\\contracts\\ChatApp.sol": {
-      "lastModificationDate": 1705487817696,
+    "D:\\HCMUS\\DATN\\chatApp_JS\\chatapp\\contracts\\ChatApp.sol": {
+      "lastModificationDate": 1710734718057,
       "contentHash": "ec5977fb56a140e0b3aed7ebca9d54e3",
       "sourceName": "contracts/ChatApp.sol",
       "solcConfig": {

@@ -15,3 +15,11 @@ Build your first web3 API start-up, in which you can provide users to upload the
 - Khi đã clone, ae muốn cập nhật cái mà đồng đội mình vừa hoàn thành.
   + git pull
   + đổi về branch của mình.
+
+### deploy contract:
+#### install dotenv: 
+- npm install dotenv --save
+
+#### deploy contract:
+- npx hardhat run scripts/deploy.js --network sepolia
+- contract address: 0xEFc5FB1f51079a61616f23835Ed2F131dB919CEa

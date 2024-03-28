@@ -26,15 +26,21 @@ Build your first web3 API start-up, in which you can provide users to upload the
   - pnpm ^8
   - Docker Desktop
   - Rust(không nhớ có cần không, nhma nếu tại install:foundry trong "lưu ý 2" mà bị lỗi "cargo" thì ae install sau cũng được)
-### Lưu ý 1: mỗi lần chạy chain xong phải clean chain và lần sau chạy lại từ "lưu ý 2"
-  - Làm theo hướng dẫn tại tuturial: https://docs.celestia.org/developers/optimism-devnet cho tới mục "START DEVNET" quay lại đọc "Lưu ý 2" và không chạy theo Tuturial nữa  (lưu ý chạy bằng WSL2 và folder phải clone trên ổ linux)
+### Bước 1: lưu ý chạy bằng WSL2 và folder phải clone trên ổ linux
+  - Làm theo hướng dẫn tại tuturial: https://docs.celestia.org/developers/optimism-devnet cho tới mục "START DEVNET" quay lại đọc "Bước 2" và không chạy theo Tuturial nữa  
 
-### Lưu ý 2: tại bước START DEVNET chạy theo hướng dẫn sau đây(các lần sau chạy lại chain thì bắt đầu từ bước này)
+### Bước 2: tại bước START DEVNET chạy theo hướng dẫn sau đây(các lần sau chạy lại chain thì bắt đầu từ bước này)
   - Mở wsl trong thư mục optisism vừa clone:
     + run: pnpm install:foundry
-    + run: pnpm check:foundry : terminal báo "Foundry version matches the expected version." là thành công
+    + run: pnpm check:foundry
+      * terminal báo "Foundry version matches the expected version." là thành công
+      * Nếu nó báo "expected version a170021" thì tạm thời bỏ qua và chạy các bước ở dưới và check mục (1) sau devnet-up
     + Mở sẵn Docker Desktop
     + run: make devnet-up => trừ "op_stack_go_builder-1" còn lại 7/8 image docker chạy là done
+    + (1) check các yc dưới đây nếu bạn bị dính thông báo "expected version a170021" ở trên
+      * Mở op-batcher-1 và xem có dòng "celestia: blob successfully submitted" hay "celestia: blob fail submitted"
+      * Nếu báo fail quay lại step đầu bước 2 chạy "curl -L https://foundry.paradigm.xyz | bash" thay vì  pnpm install:foundry và chạy lại các bước trên(nếu vẫn dính lỗi expected ver lại tiếp tục bỏ qua)
+
   - Khi không sử dụng chain nữa:
     + run: make devnet-down
     + run: make devnet-clean
@@ -49,6 +55,11 @@ Build your first web3 API start-up, in which you can provide users to upload the
     + ID chuỗi: 901(sau khi nhập URL để xem nó có gợi ý ID không, nếu ko thì chain có vấn đề)
     + Ký hiệu tiền tệ: GAR
   - Nếu không báo lỗi thì lưu mạng lại => thành công
+  - Import ví Gen
+    + Mở Docker Desktop -> mở L1
+    + Kéo lên trên cùng sẽ thấy "BLOCK_SIGNER_PRIVATE_KEY= ..."
+    + Copy Private key -> vào metamask import ví này vào
+    + Sau đó từ ví này chuyển tiền sang ví của ae -> done
 
 
 ## Deploy Dapp to chain

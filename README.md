@@ -17,7 +17,8 @@ Build your first web3 API start-up, in which you can provide users to upload the
   + đổi về branch của mình.
 
 ## Run chain 
-### Software Dependencies
+### Software Dependencies  
+  - WSL2(nếu là máy window)
   - Go: ^1.21
   - Foundry: ^0.2
   - make: ^3

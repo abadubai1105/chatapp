@@ -4,7 +4,7 @@
 
 Build your first web3 API start-up, in which you can provide users to upload the NFT to IPFS, and allow them to make API requests to fetch all the IPFS blockchain smart contract data.
 
-### NOTE 
+## NOTE 
 - Khi clone về ae nên:
   + git branch <tên branch của mình> (ví dụ: git branch nghiapro1 để chỉnh sửa có gì còn biết mà return).
   + git switch <tên branch của mình> (ví dụ: git switch nghiapro1)
@@ -16,12 +16,12 @@ Build your first web3 API start-up, in which you can provide users to upload the
   + git pull
   + đổi về branch của mình.
 
-### Run chain 
-## Lưu ý 1: mỗi lần chạy chain xong phải clean chain và lần sau chạy lại từ đầu
+## Run chain 
+### Lưu ý 1: mỗi lần chạy chain xong phải clean chain và lần sau chạy lại từ đầu
   - clone https://docs.celestia.org/developers/optimism-devnet (lưu ý chạy bằng WSL2 và folder phải clone trên ổ linux)
   - làm các bước như hướng dẫn cho tới mục "START DEVNET" quay lại đọc "Lưu ý 2" và không chạy theo Tuturial nữa
 
-## Lưu ý 2: tại bước START DEVNET chạy theo hướng dẫn sau đây(các lần sau chạy lại chain thì bắt đầu từ bước này)
+### Lưu ý 2: tại bước START DEVNET chạy theo hướng dẫn sau đây(các lần sau chạy lại chain thì bắt đầu từ bước này)
   - mở wsl trong thư mục optisism vừa clone:
     + run: pnpm install:foundry
     + run: pnpm check:foundry : terminal báo "Foundry version matches the expected version." là thành công
@@ -32,7 +32,7 @@ Build your first web3 API start-up, in which you can provide users to upload the
     + run: make devnet-clean
   - muốn chạy lại chain quay lại chạy từ "lưu ý 2"
 
-### Deploy Dapp to chain
+## Deploy Dapp to chain
   - chỉnh sửa file .env như hướng dẫn
   - Run chain
   - mở termial tại thư mục chatapp(cmd/powershell) run: "npx hardhat run scripts/deploy.js --network localhost" để chạy

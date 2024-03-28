@@ -24,8 +24,9 @@ Build your first web3 API start-up, in which you can provide users to upload the
   - make: ^3
   - Node: ^20
   - pnpm ^8
+  - Docker Desktop
   - Rust(không nhớ có cần không, nhma nếu tại install:foundry trong "lưu ý 2" mà bị lỗi "cargo" thì ae install sau cũng được)
-### Lưu ý 1: mỗi lần chạy chain xong phải clean chain và lần sau chạy lại từ đầu
+### Lưu ý 1: mỗi lần chạy chain xong phải clean chain và lần sau chạy lại từ "lưu ý 2"
   - Làm theo hướng dẫn tại tuturial: https://docs.celestia.org/developers/optimism-devnet cho tới mục "START DEVNET" quay lại đọc "Lưu ý 2" và không chạy theo Tuturial nữa  (lưu ý chạy bằng WSL2 và folder phải clone trên ổ linux)
 
 ### Lưu ý 2: tại bước START DEVNET chạy theo hướng dẫn sau đây(các lần sau chạy lại chain thì bắt đầu từ bước này)

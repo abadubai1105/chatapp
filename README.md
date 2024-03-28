@@ -40,6 +40,7 @@ Build your first web3 API start-up, in which you can provide users to upload the
     + run: make devnet-clean
   - muốn chạy lại chain quay lại chạy từ "lưu ý 2"
 
+<<<<<<< HEAD
   ### connect wallet
   - Lưu ý chain phải đang chạy
   - Mở metamask
@@ -50,6 +51,8 @@ Build your first web3 API start-up, in which you can provide users to upload the
     + Ký hiệu tiền tệ: GAR
   - Nếu không báo lỗi thì lưu mạng lại => thành công
 
+=======
+>>>>>>> 1aaf40344984d47c25a4b1bfe38ffa1cb2a7e3d8
 ## Deploy Dapp to chain
   - chỉnh sửa file .env như hướng dẫn
   - Run chain

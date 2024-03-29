@@ -27,28 +27,28 @@ Build your first web3 API start-up, in which you can provide users to upload the
   - Docker Desktop
   - Rust(không nhớ có cần không, nhma nếu tại install:foundry trong "Bước 2" mà bị lỗi "cargo" thì ae install sau cũng được)
 ### Bước 1: lưu ý chạy bằng WSL2 và folder phải clone trên ổ linux
-  - Làm theo hướng dẫn tại tuturial: https://docs.celestia.org/developers/optimism-devnet cho tới mục _START DEVNET_ quay lại đọc _Bước 2_ và không chạy theo Tuturial nữa  
+  - Làm theo hướng dẫn tại tuturial: https://docs.celestia.org/developers/optimism-devnet cho tới mục **_Start devnet_** quay lại đọc **_Bước 2_** và không chạy theo Tuturial nữa  
 
 ### Bước 2: tại bước START DEVNET chạy theo hướng dẫn sau đây
   - Mở wsl trong thư mục optimism vừa clone:
     + run: **pnpm install:foundry**
 
     + run: **pnpm check:foundry** (_các lần sau chạy lại chain thì bắt đầu từ bước này_)
-      * Nếu terminal báo _expected version a170021_ thì tạm thời bỏ qua và chạy các bước ở dưới và check mục **(1)** sau devnet-up
-      * Nếu báo _Foundry version matches the expected version._ là thành công
+      * Nếu terminal báo "_expected version a170021_" thì tạm thời bỏ qua và chạy các bước ở dưới và check mục **(1)** sau devnet-up
+      * Nếu báo "_Foundry version matches the expected version._" là thành công
       
     + Mở sẵn Docker Desktop
-    + run: **make devnet-up** => trừ _op_stack_go_builder-1_ còn lại 7/8 image docker chạy là done
+    + run: **make devnet-up** => trừ "_op_stack_go_builder-1_" còn lại 7/8 image docker chạy là done
 
-    + **(1)** check các yc dưới đây nếu bạn bị dính thông báo _expected version a170021_ ở trên
-      * Mở op-batcher-1 và xem có dòng _celestia: blob successfully submitted_ hay _celestia: blob submission failed_
+    + **(1)** check các yc dưới đây nếu bạn bị dính thông báo "_expected version a170021_" ở trên
+      * Mở op-batcher-1 và xem có dòng "_celestia: blob successfully submitted_" hay "_celestia: blob submission failed_"
       * Nếu báo success thì thành công r ^^ 
       * Nếu báo fail quay lại step đầu bước 2 chạy **curl -L https://foundry.paradigm.xyz | bash** thay vì  **pnpm install:foundry** và chạy lại các bước trên(nếu vẫn dính lỗi expected ver lại tiếp tục bỏ qua)
 
   - Khi không sử dụng chain nữa:
     + run: **make devnet-down**
     + run: **make devnet-clean**
-  - Muốn chạy lại chain quay lại chạy từ _pnpm check:foundry_
+  - Muốn chạy lại chain quay lại chạy từ "_pnpm check:foundry_"
   
   ### connect wallet
   - Lưu ý chain phải đang chạy

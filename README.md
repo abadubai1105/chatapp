@@ -39,7 +39,8 @@ Build your first web3 API start-up, in which you can provide users to upload the
       
     + Mở sẵn Docker Desktop
     + run: **make devnet-up** => trừ _op_stack_go_builder-1_ còn lại 7/8 image docker chạy là done
-    **(1)** check các yc dưới đây nếu bạn bị dính thông báo _expected version a170021_ ở trên
+
+    + **(1)** check các yc dưới đây nếu bạn bị dính thông báo _expected version a170021_ ở trên
       * Mở op-batcher-1 và xem có dòng _celestia: blob successfully submitted_ hay _celestia: blob submission failed_
       * Nếu báo success thì thành công r ^^ 
       * Nếu báo fail quay lại step đầu bước 2 chạy **curl -L https://foundry.paradigm.xyz | bash** thay vì  **pnpm install:foundry** và chạy lại các bước trên(nếu vẫn dính lỗi expected ver lại tiếp tục bỏ qua)

@@ -29,7 +29,7 @@ Build your first web3 API start-up, in which you can provide users to upload the
 ### Bước 1: lưu ý chạy bằng WSL2 và folder phải clone trên ổ linux
   - Làm theo hướng dẫn tại tuturial: https://docs.celestia.org/developers/optimism-devnet cho tới mục **_Start devnet_** quay lại đọc **_Bước 2_** và không chạy theo Tuturial nữa  
 
-### Bước 2: tại bước START DEVNET chạy theo hướng dẫn sau đây
+### Bước 2: tại bước Srart devnet chạy theo hướng dẫn sau đây
   - Mở wsl trong thư mục optimism vừa clone:
     + run: **pnpm install:foundry**
 
@@ -61,7 +61,7 @@ Build your first web3 API start-up, in which you can provide users to upload the
   - Nếu không báo lỗi thì lưu mạng lại => thành công
   - Import ví Gen
     + Mở Docker Desktop -> mở L1
-    + Kéo lên trên cùng sẽ thấy "BLOCK_SIGNER_PRIVATE_KEY= ..."
+    + Kéo lên trên cùng sẽ thấy "**BLOCK_SIGNER_PRIVATE_KEY=** ..."
     + Copy Private key -> vào metamask import ví này vào
     + Sau đó từ ví này chuyển tiền sang ví của ae -> done
 
@@ -71,3 +71,7 @@ Build your first web3 API start-up, in which you can provide users to upload the
   - Run chain
   - Mở termial tại thư mục chatapp(cmd/powershell) run: **npx hardhat run scripts/deploy.js --network localhost** để chạy
   - Terminal xuất hiện "Contract Address" là chạy thành công
+
+## Run Code
+  - npm run build
+  - npm run dev
